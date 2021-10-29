@@ -9,6 +9,10 @@ import UIKit
 
 class VacationCell: UITableViewCell {
 
+    @IBOutlet weak var imageViewVacation: UIImageView!
+    @IBOutlet weak var textLabelVacation: UILabel!
+    @IBOutlet weak var textLabelHotel: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -20,8 +24,13 @@ class VacationCell: UITableViewCell {
         // Configure the view for the selected state
     }
 
-    func setData() {
-        
+    func setData(desiredVacation dv: DesiredVacation) {
+        textLabelVacation.text = dv.name
+        textLabelHotel.text = dv.hotelName
+        if let img = dv.image {
+            imageViewVacation.image = UIImage(data: img, scale:1.0)
+        }
+
     }
     
 }

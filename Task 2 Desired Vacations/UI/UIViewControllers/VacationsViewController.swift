@@ -27,10 +27,8 @@ class VacationsViewController: UITableViewController, AddVacationTableViewContro
         if let index = items.firstIndex(of: item) {
             let indexPath = IndexPath(row: index, section: 0)
             if let cell = tableView.cellForRow(at: indexPath) {
-                let labelVacationName = cell.viewWithTag(1000) as! UILabel
-                labelVacationName.text = item.name
-                let labelHotelName = cell.viewWithTag(2000) as! UILabel
-                labelHotelName.text = item.hotelName
+                let vCell = cell as! VacationCell
+                vCell.setData(desiredVacation: item)
             }
             navigationController?.popViewController(animated: true)
         }
@@ -43,8 +41,6 @@ class VacationsViewController: UITableViewController, AddVacationTableViewContro
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationController?.navigationBar.prefersLargeTitles = true
-//        tableView.delegate = self
-//        tableView.dataSource = self
         fetchVacations()
     }
         
@@ -60,34 +56,25 @@ class VacationsViewController: UITableViewController, AddVacationTableViewContro
     }
     
     @IBAction func addVacation(_ sender: Any) {
+        
     }
-    
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        let vc = AddVacationTableViewController()
-//        vc.isEdit = true
-//    }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.items.count
+        
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "vacationsCell", for: indexPath) as! VacationCell
         let desiredVacation = self.items[indexPath.row]
-        let labelVacationName = cell.viewWithTag(1000) as! UILabel
-        labelVacationName.text = desiredVacation.name
-        let labelHotelName = cell.viewWithTag(2000) as! UILabel
-        labelHotelName.text = desiredVacation.hotelName
-        let vacationImage = cell.viewWithTag(3000) as! UIImageView
-        if let img = desiredVacation.image {
-            vacationImage.image = UIImage(data: img, scale:1.0)
-        }
-        cell.setData()
+        cell.setData(desiredVacation: desiredVacation)
         return cell
+        
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+        
     }
     
     override func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
@@ -100,9 +87,11 @@ class VacationsViewController: UITableViewController, AddVacationTableViewContro
                 print(error)
             }
             self.fetchVacations()
+            
         }
         
         return UISwipeActionsConfiguration(actions: [action])
+        
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -115,6 +104,7 @@ class VacationsViewController: UITableViewController, AddVacationTableViewContro
             if let indexPath = tableView.indexPath(for: sender as! UITableViewCell) {
                 controller.itemToEdit = items[indexPath.row]
             }
+            
         }
 
     }

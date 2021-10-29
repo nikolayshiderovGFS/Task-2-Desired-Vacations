@@ -24,7 +24,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fnz-uQ-AWJ">
-                                            <rect key="frame" x="30" y="21" width="325.5" height="258"/>
+                                            <rect key="frame" x="30" y="21" width="326" height="197"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" tag="1000" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eVO-0e-JBo">
                                                     <rect key="frame" x="0.0" y="207" width="325.5" height="24"/>
@@ -43,27 +43,30 @@
                                             </subviews>
                                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                             <constraints>
-                                                <constraint firstItem="0Mx-Jk-0t4" firstAttribute="leading" secondItem="Fnz-uQ-AWJ" secondAttribute="leading" id="0AG-Fe-lAJ"/>
-                                                <constraint firstItem="eVO-0e-JBo" firstAttribute="leading" secondItem="Fnz-uQ-AWJ" secondAttribute="leading" id="32f-Tp-uyK"/>
-                                                <constraint firstAttribute="trailing" secondItem="eVO-0e-JBo" secondAttribute="trailing" id="E2c-Uu-2xS"/>
-                                                <constraint firstItem="M0a-NH-Z29" firstAttribute="top" secondItem="eVO-0e-JBo" secondAttribute="bottom" constant="10" id="L0H-8U-qc4"/>
-                                                <constraint firstAttribute="trailing" secondItem="0Mx-Jk-0t4" secondAttribute="trailing" id="QDI-PB-hd5"/>
-                                                <constraint firstItem="M0a-NH-Z29" firstAttribute="leading" secondItem="Fnz-uQ-AWJ" secondAttribute="leading" id="Xb1-2X-kGH"/>
-                                                <constraint firstAttribute="bottom" secondItem="M0a-NH-Z29" secondAttribute="bottom" id="cId-Q7-d2K"/>
-                                                <constraint firstItem="eVO-0e-JBo" firstAttribute="top" secondItem="0Mx-Jk-0t4" secondAttribute="bottom" constant="10" id="iTJ-Ne-7ti"/>
-                                                <constraint firstItem="0Mx-Jk-0t4" firstAttribute="top" secondItem="Fnz-uQ-AWJ" secondAttribute="top" id="tbj-9E-ZE0"/>
-                                                <constraint firstAttribute="trailing" secondItem="M0a-NH-Z29" secondAttribute="trailing" id="xoe-4R-pUx"/>
+                                                <constraint firstItem="0Mx-Jk-0t4" firstAttribute="leading" secondItem="eVO-0e-JBo" secondAttribute="leading" id="24T-Ve-s3T"/>
+                                                <constraint firstItem="eVO-0e-JBo" firstAttribute="leading" secondItem="M0a-NH-Z29" secondAttribute="leading" id="CkD-cX-ONK"/>
+                                                <constraint firstItem="0Mx-Jk-0t4" firstAttribute="top" secondItem="Fnz-uQ-AWJ" secondAttribute="top" id="NjS-g1-81N"/>
+                                                <constraint firstItem="0Mx-Jk-0t4" firstAttribute="trailing" secondItem="eVO-0e-JBo" secondAttribute="trailing" id="PA7-Zd-F3j"/>
+                                                <constraint firstItem="eVO-0e-JBo" firstAttribute="top" secondItem="0Mx-Jk-0t4" secondAttribute="bottom" constant="10" id="QBq-RB-P4K"/>
+                                                <constraint firstItem="M0a-NH-Z29" firstAttribute="top" secondItem="eVO-0e-JBo" secondAttribute="bottom" constant="10" id="XgC-yX-WSi"/>
+                                                <constraint firstItem="0Mx-Jk-0t4" firstAttribute="centerY" secondItem="Fnz-uQ-AWJ" secondAttribute="centerY" id="fDr-TK-tRV"/>
+                                                <constraint firstItem="0Mx-Jk-0t4" firstAttribute="leading" secondItem="Fnz-uQ-AWJ" secondAttribute="leading" id="mJ3-g2-gxd"/>
+                                                <constraint firstItem="0Mx-Jk-0t4" firstAttribute="centerX" secondItem="Fnz-uQ-AWJ" secondAttribute="centerX" id="r3u-65-rtr"/>
+                                                <constraint firstItem="eVO-0e-JBo" firstAttribute="trailing" secondItem="M0a-NH-Z29" secondAttribute="trailing" id="rLF-vu-0Eu"/>
                                             </constraints>
                                         </view>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstAttribute="trailingMargin" secondItem="Fnz-uQ-AWJ" secondAttribute="trailing" constant="10" id="U2T-Wl-fHZ"/>
-                                        <constraint firstItem="Fnz-uQ-AWJ" firstAttribute="top" secondItem="gLe-gd-7F4" secondAttribute="topMargin" constant="10" id="a6e-o8-SXw"/>
-                                        <constraint firstAttribute="bottomMargin" secondItem="Fnz-uQ-AWJ" secondAttribute="bottom" constant="10" id="lqN-EU-yu7"/>
-                                        <constraint firstItem="Fnz-uQ-AWJ" firstAttribute="leading" secondItem="gLe-gd-7F4" secondAttribute="leadingMargin" constant="10" id="s1X-Gt-B2M"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="Fnz-uQ-AWJ" secondAttribute="trailing" constant="9.5" id="ZyC-4R-7tk"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="Fnz-uQ-AWJ" secondAttribute="bottom" constant="71" id="grQ-Qj-pOL"/>
+                                        <constraint firstItem="Fnz-uQ-AWJ" firstAttribute="leading" secondItem="gLe-gd-7F4" secondAttribute="leadingMargin" constant="10" id="lwz-mK-Vef"/>
+                                        <constraint firstItem="Fnz-uQ-AWJ" firstAttribute="top" secondItem="gLe-gd-7F4" secondAttribute="topMargin" constant="10" id="rO9-c4-x17"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
+                                    <outlet property="imageViewVacation" destination="0Mx-Jk-0t4" id="tdF-fl-PY3"/>
+                                    <outlet property="textLabelHotel" destination="M0a-NH-Z29" id="cAF-bC-koW"/>
+                                    <outlet property="textLabelVacation" destination="eVO-0e-JBo" id="z8y-mm-vBx"/>
                                     <segue destination="EJy-Bj-nic" kind="show" identifier="editVacation" trigger="accessoryAction" id="T3l-sg-oAL"/>
                                 </connections>
                             </tableViewCell>

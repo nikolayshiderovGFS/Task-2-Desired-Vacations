@@ -52,6 +52,9 @@ class AddVacationTableViewController: UITableViewController, UITextFieldDelegate
             textFieldLocation.text = item.location
             textFieldMoney.text = item.necessaryMoneyAmount
             textFieldDescription.text = item.hotelDescription
+            if let img = item.image {
+                imageView.image = UIImage(data: img, scale:1.0)
+            }
         }
     }
     
@@ -106,8 +109,8 @@ class AddVacationTableViewController: UITableViewController, UITextFieldDelegate
             item.location = textFieldLocation.text
             item.necessaryMoneyAmount = textFieldMoney.text
             item.hotelDescription = textFieldDescription.text
-//            let img = self.imageView.image?.pngData()
-//            item.image = ima
+            let img = self.imageView.image?.pngData()
+            item.image = img
             scheduleNotification()
 
             do {
