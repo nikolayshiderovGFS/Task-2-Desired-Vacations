@@ -7,25 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		45AD7A4A272C1955001A239D /* VacationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45AD7A49272C1955001A239D /* VacationCell.swift */; };
 		45B326AD272932AA0044136E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B326AC272932AA0044136E /* AppDelegate.swift */; };
 		45B326AF272932AA0044136E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B326AE272932AA0044136E /* SceneDelegate.swift */; };
-		45B326B1272932AA0044136E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B326B0272932AA0044136E /* ViewController.swift */; };
+		45B326B1272932AA0044136E /* VacationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B326B0272932AA0044136E /* VacationsViewController.swift */; };
 		45B326B4272932AA0044136E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45B326B2272932AA0044136E /* Main.storyboard */; };
-		45B326B7272932AA0044136E /* Task_2_Desired_Vacations.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 45B326B5272932AA0044136E /* Task_2_Desired_Vacations.xcdatamodeld */; };
 		45B326B9272932AB0044136E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45B326B8272932AB0044136E /* Assets.xcassets */; };
 		45B326BC272932AB0044136E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45B326BA272932AB0044136E /* LaunchScreen.storyboard */; };
+		45B326C827296B720044136E /* AddVacationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B326C727296B720044136E /* AddVacationTableViewController.swift */; };
+		45C24C50272ABAC000F7CD4B /* Task_2_Desired_Vacations.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 45C24C4E272ABAC000F7CD4B /* Task_2_Desired_Vacations.xcdatamodeld */; };
+		45C24C53272AE02C00F7CD4B /* DesiredVacation+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C24C51272AE02C00F7CD4B /* DesiredVacation+CoreDataClass.swift */; };
+		45C24C54272AE02C00F7CD4B /* DesiredVacation+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C24C52272AE02C00F7CD4B /* DesiredVacation+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		45AD7A49272C1955001A239D /* VacationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VacationCell.swift; sourceTree = "<group>"; };
 		45B326A9272932AA0044136E /* Task 2 Desired Vacations.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Task 2 Desired Vacations.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		45B326AC272932AA0044136E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		45B326AE272932AA0044136E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		45B326B0272932AA0044136E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		45B326B0272932AA0044136E /* VacationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VacationsViewController.swift; sourceTree = "<group>"; };
 		45B326B3272932AA0044136E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		45B326B6272932AA0044136E /* Task_2_Desired_Vacations.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Task_2_Desired_Vacations.xcdatamodel; sourceTree = "<group>"; };
 		45B326B8272932AB0044136E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		45B326BB272932AB0044136E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		45B326BD272932AB0044136E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		45B326C727296B720044136E /* AddVacationTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddVacationTableViewController.swift; sourceTree = "<group>"; };
+		45C24C4F272ABAC000F7CD4B /* Task_2_Desired_Vacations.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Task_2_Desired_Vacations.xcdatamodel; sourceTree = "<group>"; };
+		45C24C51272AE02C00F7CD4B /* DesiredVacation+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DesiredVacation+CoreDataClass.swift"; sourceTree = "<group>"; };
+		45C24C52272AE02C00F7CD4B /* DesiredVacation+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DesiredVacation+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +47,42 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		45AD7A4B272C19A9001A239D /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				45AD7A4D272C1C42001A239D /* UITableViewCells */,
+				45AD7A4E272C1C58001A239D /* UIViewControllers */,
+				45B326AE272932AA0044136E /* SceneDelegate.swift */,
+				45B326B2272932AA0044136E /* Main.storyboard */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		45AD7A4C272C19C5001A239D /* Global */ = {
+			isa = PBXGroup;
+			children = (
+				45B326AC272932AA0044136E /* AppDelegate.swift */,
+			);
+			path = Global;
+			sourceTree = "<group>";
+		};
+		45AD7A4D272C1C42001A239D /* UITableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				45AD7A49272C1955001A239D /* VacationCell.swift */,
+			);
+			path = UITableViewCells;
+			sourceTree = "<group>";
+		};
+		45AD7A4E272C1C58001A239D /* UIViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				45B326B0272932AA0044136E /* VacationsViewController.swift */,
+				45B326C727296B720044136E /* AddVacationTableViewController.swift */,
+			);
+			path = UIViewControllers;
+			sourceTree = "<group>";
+		};
 		45B326A0272932AA0044136E = {
 			isa = PBXGroup;
 			children = (
@@ -58,16 +102,24 @@
 		45B326AB272932AA0044136E /* Task 2 Desired Vacations */ = {
 			isa = PBXGroup;
 			children = (
-				45B326AC272932AA0044136E /* AppDelegate.swift */,
-				45B326AE272932AA0044136E /* SceneDelegate.swift */,
-				45B326B0272932AA0044136E /* ViewController.swift */,
-				45B326B2272932AA0044136E /* Main.storyboard */,
+				45AD7A4C272C19C5001A239D /* Global */,
+				45AD7A4B272C19A9001A239D /* UI */,
+				45C24C55272AE03500F7CD4B /* ModelDB */,
 				45B326B8272932AB0044136E /* Assets.xcassets */,
 				45B326BA272932AB0044136E /* LaunchScreen.storyboard */,
 				45B326BD272932AB0044136E /* Info.plist */,
-				45B326B5272932AA0044136E /* Task_2_Desired_Vacations.xcdatamodeld */,
+				45C24C4E272ABAC000F7CD4B /* Task_2_Desired_Vacations.xcdatamodeld */,
 			);
 			path = "Task 2 Desired Vacations";
+			sourceTree = "<group>";
+		};
+		45C24C55272AE03500F7CD4B /* ModelDB */ = {
+			isa = PBXGroup;
+			children = (
+				45C24C51272AE02C00F7CD4B /* DesiredVacation+CoreDataClass.swift */,
+				45C24C52272AE02C00F7CD4B /* DesiredVacation+CoreDataProperties.swift */,
+			);
+			path = ModelDB;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,10 +193,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				45B326B1272932AA0044136E /* ViewController.swift in Sources */,
+				45C24C54272AE02C00F7CD4B /* DesiredVacation+CoreDataProperties.swift in Sources */,
+				45B326B1272932AA0044136E /* VacationsViewController.swift in Sources */,
+				45AD7A4A272C1955001A239D /* VacationCell.swift in Sources */,
+				45B326C827296B720044136E /* AddVacationTableViewController.swift in Sources */,
+				45C24C50272ABAC000F7CD4B /* Task_2_Desired_Vacations.xcdatamodeld in Sources */,
+				45C24C53272AE02C00F7CD4B /* DesiredVacation+CoreDataClass.swift in Sources */,
 				45B326AD272932AA0044136E /* AppDelegate.swift in Sources */,
 				45B326AF272932AA0044136E /* SceneDelegate.swift in Sources */,
-				45B326B7272932AA0044136E /* Task_2_Desired_Vacations.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -364,13 +420,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		45B326B5272932AA0044136E /* Task_2_Desired_Vacations.xcdatamodeld */ = {
+		45C24C4E272ABAC000F7CD4B /* Task_2_Desired_Vacations.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				45B326B6272932AA0044136E /* Task_2_Desired_Vacations.xcdatamodel */,
+				45C24C4F272ABAC000F7CD4B /* Task_2_Desired_Vacations.xcdatamodel */,
 			);
-			currentVersion = 45B326B6272932AA0044136E /* Task_2_Desired_Vacations.xcdatamodel */;
-			path = Task_2_Desired_Vacations.xcdatamodeld;
+			currentVersion = 45C24C4F272ABAC000F7CD4B /* Task_2_Desired_Vacations.xcdatamodel */;
+			name = Task_2_Desired_Vacations.xcdatamodeld;
+			path = ../Task_2_Desired_Vacations.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
